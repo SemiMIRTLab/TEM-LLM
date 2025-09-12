@@ -46,8 +46,8 @@ Process: Multi-class classification to automatically sort images by microscopy t
 This preprocessing step ensures that our dataset is properly organized and that images are optimally prepared for downstream visual question answering tasks.
 
 **Implementation Details:**
-- Complete pipeline available at [src/TEM_project/main.ipynb](https://github.com/SmartLab-Roy/visual-qa-tem/blob/main/src/TEM_project/main.ipynb)
-- YOLO & ResNet preprocessing implementation can be found in [src/TEM_project/TEM_project_function/vision_crop.py](https://github.com/SmartLab-Roy/visual-qa-tem/blob/main/src/TEM_project/TEM_project_function/vision_crop.py)
+- Complete pipeline available at [src/TEM_project/main.ipynb](https://github.com/SmartLab-Roy/visual-qa-tem/blob/main/src/main.ipynb)
+- YOLO & ResNet preprocessing implementation can be found in [src/TEM_project/TEM_project_function/vision_crop.py](https://github.com/SmartLab-Roy/visual-qa-tem/blob/main/src/project_function/vision_crop.py)
   
 ⚠️ **Important**:
 - We trained custom YOLO & ResNet models specifically for these tasks (training data not provided due to 
