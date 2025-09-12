@@ -43,7 +43,7 @@ Uses BERTScore and SentenceBERT for semantic similarity:
 
 **Combined Score**: We average lexical and semantic scores for comprehensive evaluation:
 
-> $$Final\_Score = 0.5 \times S_{lexical} + 0.5 \times S_{semantic}$$
+> $$Final\_{Score} = 0.5 \times S_{lexical} + 0.5 \times S_{semantic}$$
 
 This evaluation framework provides both surface-level text similarity (lexical) and deeper meaning comparison (semantic) to assess model performance comprehensively.
 
