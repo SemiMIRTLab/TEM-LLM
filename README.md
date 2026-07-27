@@ -1,4 +1,4 @@
-# visual-qa-tem
+# TEM-LLM
 Automated pipeline for constructing visual question-answering datasets from microscopy literature to enable LLM interpretation of scientific images.
 
 ## Install
@@ -36,29 +36,41 @@ Follow these steps sequentially for complete pipeline implementation:
 
 Our fine-tuned LLaVA model for TEM image analysis is available on Hugging Face:
 
-🤗 **Model**: [LabSmart/visual-qa-tem](https://huggingface.co/LabSmart/visual-qa-tem)
+🤗 **Model**:
 
-### Download Model
+## Model Details
+| | |
+|---|---|
+| **Base Model** | LLaVA-v1.5-7B (Vicuna-v1.5-7B) |
+| **Training Strategy** | Difficulty-Aware Curriculum Learning (4 stages) |
+| **Training Data** | ~216K QA pairs across 40K TEM images |
+| **Domain** | Transmission Electron Microscopy (TEM) |
+| **Modalities** | CTEM, HR-TEM, STEM, Diffraction |
+
+---
+
+## Important: Inference Requirements
+TEM-LLM is built on LLaVA and **cannot be loaded directly via `transformers`**. Inference requires the LLaVA repository.
+
+**Step 1 — Clone LLaVA:**
+```bash
+git clone https://github.com/haotian-liu/LLaVA.git
+cd LLaVA
+pip install -e .
+```
+
+**Step 2 — Download weights:**
 ```python
 from huggingface_hub import snapshot_download
-import os
-
-# Download the model to local directory
-model_path = snapshot_download(
-    repo_id="LabSmart/visual-qa-tem",
-    cache_dir="./models",  # Local cache directory
-    resume_download=True
-)
-
-print(f"Model downloaded to: {model_path}")
+snapshot_download(repo_id="LabSmart/visual-qa-tem", local_dir="./TEM-LLM")
 ```
-### Quick Start
 
-Reference [LLaVA](https://github.com/haotian-liu/LLaVA.git) for environment setup and CLI inference:
-
-```
+**Step 3 — Run inference:**
+```bash
 python -m llava.serve.cli \
-    --model-path "model_path from the download output"\
+    --model-path "./TEM-LLM" \
     --image-file "path/to/your/tem_image.jpg" \
     --load-4bit
 ```
+
+For evaluation scripts, please refer to `evaluation/` in our GitHub repository.
