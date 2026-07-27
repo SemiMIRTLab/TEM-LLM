@@ -20,4 +20,4 @@ Generates diverse visual question-answering datasets including:
 
 
 
-For Data distillation, refer to our implementation in [scripts/data distillation.ipynb](https://github.com/SmartLab-Roy/visual-qa-tem/blob/main/scripts/data%20distillation.ipynb)
+For Data distillation, refer to our implementation in [scripts/data distillation.ipynb](https://github.com/SemiMIRTLab/TEM-LLM/blob/main/scripts/data%20distillation.ipynb)
