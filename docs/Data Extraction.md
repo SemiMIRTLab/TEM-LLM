@@ -35,8 +35,8 @@ Process:
 This pipeline enables the creation of comprehensive TEM image datasets with rich textual descriptions from scientific literature.
 
 **Implementation Details:**
-- Complete pipeline available at [src/TEM_project/main.ipynb](https://github.com/SmartLab-Roy/visual-qa-tem/blob/main/src/main.ipynb)
-- 2YOLO model preprocessing implementation can be found in [src/TEM_project/TEM_project_function/vision_crop.py](https://github.com/SmartLab-Roy/visual-qa-tem/blob/main/src/project_function/vision_crop.py)
+- Complete pipeline available at [src/TEM_project/main.ipynb](https://github.com/SemiMIRTLab/TEM-LLM/blob/main/src/main.ipynb)
+- 2YOLO model preprocessing implementation can be found in [src/TEM_project/TEM_project_function/vision_crop.py](https://github.com/SemiMIRTLab/TEM-LLM/blob/main/src/project_function/vision_crop.py)
   
 ⚠️ **Important**:
 - We trained custom YOLO models specifically for these tasks (training data not provided due to copyright considerations).
