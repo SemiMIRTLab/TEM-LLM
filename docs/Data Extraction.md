@@ -1,5 +1,6 @@
 # Data Extraction
-<img width="3654" height="2547" alt="5-copy2" src="https://github.com/user-attachments/assets/7e45c56d-bcbb-4ff2-831b-1dd85bf7a62b" />
+
+<img width="1052" height="800" alt="image" src="https://github.com/user-attachments/assets/8eedd5f8-6dc3-4e92-af25-9faac212449e" />
 
 ## PDF Processing Pipeline for Figure-Caption Extraction
 Our pipeline processes scientific PDF documents to extract figure-caption pairs for dataset creation:
