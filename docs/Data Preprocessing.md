@@ -10,7 +10,7 @@ We utilize two OCR engines to extract different types of text from caption image
 - Pix2Text: For LaTeX-formatted mathematical expressions and formulas
 - EasyOCR: For general descriptive text recognition
 
-For caption image OCR processing, refer to our implementation in [scripts/caption_OCR.ipynb](https://github.com/SmartLab-Roy/visual-qa-tem/blob/main/scripts/caption_OCR.ipynb)
+For caption image OCR processing, refer to our implementation in [scripts/caption_OCR.ipynb](https://github.com/SemiMIRTLab/TEM-LLM/blob/main/scripts/caption_OCR.ipynb)
 
 #### GPT-Powered Caption Enhancement 
 After extracting raw text from caption images, we employ GPT-3.5 Turbo to perform two critical tasks:
@@ -18,7 +18,7 @@ After extracting raw text from caption images, we employ GPT-3.5 Turbo to perfor
 - Caption Reconstruction: Transform the extracted OCR text (both LaTeX-formatted and descriptive) into coherent, well-structured captions that maintain scientific accuracy while improving readability.
 - Content Classification: Automatically categorize caption content into predefined categories to enable systematic organization.
 
-For implementation details of the GPT processing pipeline, refer to [scripts/data distillation.ipynb](https://github.com/SmartLab-Roy/visual-qa-tem/blob/main/scripts/data%20distillation.ipynb)
+For implementation details of the GPT processing pipeline, refer to [scripts/data distillation.ipynb](https://github.com/SemiMIRTLab/TEM-LLM/blob/main/scripts/data%20distillation.ipynb)
 
 ---
 ### Images Preprocessing for segmentation & classification 
@@ -48,8 +48,8 @@ Process: Multi-class classification to automatically sort images by microscopy t
 This preprocessing step ensures that our dataset is properly organized and that images are optimally prepared for downstream visual question answering tasks.
 
 **Implementation Details:**
-- Complete pipeline available at [src/TEM_project/main.ipynb](https://github.com/SmartLab-Roy/visual-qa-tem/blob/main/src/main.ipynb)
-- YOLO & ResNet preprocessing implementation can be found in [src/TEM_project/TEM_project_function/vision_crop.py](https://github.com/SmartLab-Roy/visual-qa-tem/blob/main/src/project_function/vision_crop.py)
+- Complete pipeline available at [src/TEM_project/main.ipynb](https://github.com/SemiMIRTLab/TEM-LLM/blob/main/src/main.ipynb)
+- YOLO & ResNet preprocessing implementation can be found in [src/TEM_project/TEM_project_function/vision_crop.py](https://github.com/SemiMIRTLab/TEM-LLM/blob/main/src/project_function/vision_crop.py)
   
 ⚠️ **Important**:
 - We trained custom YOLO & ResNet models specifically for these tasks (training data not provided due to 
