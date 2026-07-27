@@ -1,6 +1,6 @@
 # Data distillation
 
-<img width="2379" height="1376" alt="7-copy" src="https://github.com/user-attachments/assets/6663b925-affa-4861-ada0-47ea7e282156" />
+<img width="982" height="545" alt="image" src="https://github.com/user-attachments/assets/fc3ff4f4-59b7-493c-9aca-d4e4003588f3" />
 
 > Based on the diagram, this shows a comprehensive data quality assurance and generation workflow:
 
