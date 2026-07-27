@@ -1,5 +1,7 @@
 # Data Preprocessing
-<img width="6000" height="3375" alt="6" src="https://github.com/user-attachments/assets/7f3159e8-e3a2-4e49-974b-e8f3e3ddef02" />
+
+<img width="1227" height="850" alt="image" src="https://github.com/user-attachments/assets/651838f5-5980-4049-812c-8274fceed5fd" />
+
 
 ### Caption Reconstruction Using OCR
 #### Phase 1 caption OCR processing 
