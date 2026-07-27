@@ -54,4 +54,4 @@ GPT-4o was used to approximate expert evaluation along three dimensions:
 3. **Expression quality** (fluency, completeness, professionalism).
 This complemented automated metrics by capturing human-like assessment of semantic and logical quality
 
-For Model Evaluation, refer to our implementation in [scripts/evaluation.ipynb](https://github.com/SmartLab-Roy/visual-qa-tem/blob/main/scripts/evaluation.ipynb)
+For Model Evaluation, refer to our implementation in [scripts/evaluation.ipynb](https://github.com/SemiMIRTLab/TEM-LLM/blob/main/scripts/evaluation.ipynb)
