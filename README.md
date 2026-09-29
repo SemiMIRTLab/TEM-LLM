@@ -2,7 +2,7 @@
 Automated pipeline for constructing visual question-answering datasets 
 from microscopy literature to enable LLM interpretation of scientific images.
 
-This model is associated with the following work (currently under review):
+This model is associated with the following work:
 
 > *AI-Assisted Materials Characterization: A Curriculum-Guided 
 > Multimodal Framework for Transmission Electron Microscopy*
@@ -86,6 +86,18 @@ python -m llava.serve.cli \
     --model-path "./TEM-LLM" \
     --image-file "path/to/your/tem_image.jpg" \
     --load-4bit
+```
+---
+
+## Citation
+
+```bibtex
+@article{citation-0,
+  title={AI-Assisted Materials Characterization: A Curriculum-Guided Multimodal Framework for Transmission Electron Microscopy},
+  author={Tu, Chong-ren and Hsueh, Hung-wei and Chang, Wei-che and Lin, You-ting and Cheng, Yu-hsuan and Chu, Wen-huei and Tseng, Shih-wen and Hsu, Shu-han},
+  journal={ACS Measurement Science Au},
+  publisher={ACS Publications}
+}
 ```
 ---
 
